@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10)
+project(Google_sanitaizers)
+
+set(CMAKE_CXX_STANDARD 17)
+add_subdirectory(AddressSanitizer)
+add_subdirectory(LeakSanitizer)
+add_subdirectory(ThreadSanitizer)
+add_subdirectory(MemorySanitizer)
+add_subdirectory(UndefinedBehaviour)
+#add_executable(Google_sanitaizers main.cpp AddressSanitizer/addr_san.cpp)
